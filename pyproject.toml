@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "volbear"
+version = "0.1.0"
+description = "Scripts and models for 'Volatile-bearing mineral atmospheres of hot rocky exoplanets as probes of interior state and composition'"
+authors = ["Fabian L. Seidler <fabian.seidler@eaps.ethz.ch>, Paolo A. sossi <paolo.sossi@eaps.ethz.ch>, Dan J. Bower <dbower@eaps.ethz.ch>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+atmodeller = "1.0.0"
+phaethon = { git = "git@github.com:ExPlanetology/phaethon"}
+matplotlib-label-lines = "^0.7.0"
+cmcrameri = "*"
+dotenv = "*"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
