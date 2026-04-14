@@ -25,7 +25,7 @@ The figures included in this repository are licensed under a Creative Commons At
 
 The project is installable by standard means, e.g. pip, uv, poetry, etc. Note, however, that it cannot be executed without an installation of `muspell`, which is not publicly available (see **Description** above).
 
-Opacity files are required. These can be build manually (see https://github.com/ExPlanetology/phaethon).
+Opacity files are required. These can be found on zenodo (https://zenodo.org/records/19571079) or be build manually (see https://github.com/ExPlanetology/phaethon).
 
 An environment variable (OPAC_PATH) has to point to the path containing the opacities: 
 ```
