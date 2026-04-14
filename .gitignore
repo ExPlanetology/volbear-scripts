@@ -1,6 +1,8 @@
 # Auxillary folders
-output/
+output/*
+!output/README.md
 misc/
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
