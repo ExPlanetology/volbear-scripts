@@ -104,7 +104,6 @@ DEFAULT_OPAC_SPECIES_PRT: List[str] = [
     "H2S",
     "SO",
     "SH",
-    "C2H2",
 ]
 """ Default opacity species used by petitRADTRANS. The spectrally active molecules and atoms are
 the same as for the HELIOS opacities, but some auxillary species requried by HELIOS for the MMW

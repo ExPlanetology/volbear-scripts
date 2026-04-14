@@ -74,30 +74,30 @@ for ξ in [0.0, 1.0]:
             + f"T{temperature}_ξ{ξ}_Ψ{Ψ}/"
         )
 
-# =================================================================================================
-# BATCH (for appendix)
-# =================================================================================================
+# # =================================================================================================
+# # BATCH (for appendix)
+# # =================================================================================================
 
-delta_iw_arr = np.linspace(-6.0, 6.0, 100)
-OUTPATH: str = BASE_OUTPATH + "batch/"
+# delta_iw_arr = np.linspace(-6.0, 6.0, 100)
+# OUTPATH: str = BASE_OUTPATH + "batch/"
 
-# different figure for different temperatures
-for temperature in [3000]:
-    for ξ in [0.0, 0.33, 0.66, 1.0]:
-        for Ψ in [-1, 0, 1]:
-            param_space: ParameterSpace = LinearMixingParameterSpace.new(
-                planet_mass_mearth=8.,
-                cmf=0.325,
-                mantle_meltfrac=1.,
-                temperature=temperature,
-                log_vmf_factor=Ψ,
-                mixing_line_param=ξ,
-                delta_iw=delta_iw_arr,
-                melt_comp_wt=BSE_WT_COMP,
-            )
+# # different figure for different temperatures
+# for temperature in [3000]:
+#     for ξ in [0.0, 0.33, 0.66, 1.0]:
+#         for Ψ in [-1, 0, 1]:
+#             param_space: ParameterSpace = LinearMixingParameterSpace.new(
+#                 planet_mass_mearth=8.,
+#                 cmf=0.325,
+#                 mantle_meltfrac=1.,
+#                 temperature=temperature,
+#                 log_vmf_factor=Ψ,
+#                 mixing_line_param=ξ,
+#                 delta_iw=delta_iw_arr,
+#                 melt_comp_wt=BSE_WT_COMP,
+#             )
 
-            mai_equilibrator.equil_melt_and_atmosphere(param_space=param_space)
-            mai_equilibrator.write_result(
-                outpath=OUTPATH
-                + f"T{temperature}_ξ{ξ}_Ψ{Ψ}/"
-            )
+#             mai_equilibrator.equil_melt_and_atmosphere(param_space=param_space)
+#             mai_equilibrator.write_result(
+#                 outpath=OUTPATH
+#                 + f"T{temperature}_ξ{ξ}_Ψ{Ψ}/"
+#             )
